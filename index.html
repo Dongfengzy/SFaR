@@ -3,14 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Project Page</title>
+    <title>Splice, Focus and Relife: High-Resolution Periodic Pattern Generation</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+        body {
+            font-family: Arial, sans-serif;
+            padding: 50px;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        h2 {
+            font-size: 2em;
+            margin-top: 40px;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6em;
+            text-align: justify;
+        }
+        .authors {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+        .authors a {
+            color: blue;
+            text-decoration: none;
+        }
+        .institution {
+            font-style: italic;
+            margin-top: 10px;
+        }
+        .buttons {
+            margin-top: 40px;
+        }
+        .button {
+            background-color: #000;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            margin: 10px;
+            cursor: not-allowed; /* Disable button (since links are 'coming soon') */
+            display: inline-flex;
+            align-items: center;
+        }
+        .button img {
+            width: 24px;
+            margin-right: 10px;
+        }
+        video {
+            margin-top: 40px;
+            width: 80%;
+        }
+        .images {
+            margin-top: 40px;
+        }
+        .images .group {
+            margin-bottom: 40px;
+        }
+        .images .group .prompt {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        .images .group img {
+            width: 30%;
+            margin: 10px;
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Project!</h1>
-    <p>This is my GitHub Pages project homepage.</p>
+
+    <h1>Splice, Focus and Relife: High-Resolution Periodic Pattern Generation</h1>
+
+    <div class="authors">
+        <p>Xicheng Lan, Wenshuo Gao, Luyao Zhang, 
+            <a href="https://www.jiayingliu.com" target="_blank">Jiaying Liu</a>, 
+            <a href="https://www.shuaiyang.com" target="_blank">Shuai Yang</a>
+        </p>
+    </div>
+
+    <div class="institution">
+        Wangxuan Institute of Computer Technology, Peking University, Beijing, China
+    </div>
+
+    <div class="buttons">
+        <button class="button">
+            <img src="pdf-logo.png" alt="PDF">
+            Paper (coming soon)
+        </button>
+        <button class="button">
+            <img src="github-logo.png" alt="GitHub">
+            Code (coming soon)
+        </button>
+    </div>
+
+    <video autoplay loop muted>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <h2>Overview</h2>
+    <p>The printing and dyeing industry requires periodic and high-resolution patterns to ensure seamless designs on large fabric sections and high-quality final products. However, current manual approaches to pattern creation are time-consuming and labor-intensive. Leveraging powerful image generative models, such as Latent Diffusion Models (LDMs), offers a promising alternative, but challenges persist in generating strictly periodic and high-resolution patterns due to the inherent randomness and high computational demands of LDMs.</p>
+    <p>In this paper, we propose a novel text-driven framework for generating periodic and high-resolution patterns. We introduce a new training-free Splice-and-Focus Mechanism, which enhances the model by constraining latent features and modifying the attention mechanism to produce natural and strictly periodic patterns. Additionally, we present a ReLife Pipeline, which integrates super-resolution and guided image synthesis to enhance pattern resolution while eliminating artifacts and distortions. Experimental results demonstrate that our framework produces patterns of superior quality.</p>
+
+    <h2>Framework</h2>
+    <img src="framework-diagram.png" alt="Framework Diagram" style="width: 80%;">
+
+    <h2>Example Results</h2>
+    <div class="images">
+        <div class="group">
+            <p class="prompt">"white background"</p>
+            <img src="image1_1.png" alt="Image 1">
+            <img src="image1_2.png" alt="Image 2">
+            <img src="image1_3.png" alt="Image 3">
+        </div>
+        <div class="group">
+            <p class="prompt">"white background"</p>
+            <img src="image2_1.png" alt="Image 4">
+            <img src="image2_2.png" alt="Image 5">
+            <img src="image2_3.png" alt="Image 6">
+        </div>
+        <div class="group">
+            <p class="prompt">"white background"</p>
+            <img src="image3_1.png" alt="Image 7">
+            <img src="image3_2.png" alt="Image 8">
+            <img src="image3_3.png" alt="Image 9">
+        </div>
+        <div class="group">
+            <p class="prompt">"white background"</p>
+            <img src="image4_1.png" alt="Image 10">
+            <img src="image4_2.png" alt="Image 11">
+            <img src="image4_3.png" alt="Image 12">
+        </div>
+    </div>
+
+    <h2>References and Related Links</h2>
+    <p><a href="https://flux.com" target="_blank">Flux</a></p>
+    <p><a href="https://sdxl.com" target="_blank">SDXL</a></p>
+
 </body>
 </html>
-
