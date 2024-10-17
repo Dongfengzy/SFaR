@@ -33,21 +33,29 @@
             margin-top: 40px;
         }
         .button {
+            position: relative;
             background-color: #000;
             color: #fff;
-            padding: 10px 20px; /* 调小按钮大小 */
-            font-size: 1em; /* 调小字体大小 */
+            padding: 10px 20px;
+            font-size: 1em;
             border: none;
             margin: 10px;
-            cursor: not-allowed; /* 禁用按钮（由于链接尚未可用） */
+            cursor: not-allowed;
             display: inline-flex;
             align-items: center;
-            border-radius: 30px; /* 两边圆角 */
+            border-radius: 30px;
         }
+
         .button img {
-            width: 24px;
-            margin-right: 10px;
+            position: absolute; /* 使用绝对定位 */
+            left: 10px; /* 调整图标位置 */
+            top: 50%; /* 垂直居中 */
+            transform: translateY(-50%); /* 完全居中 */
+            width: 30px;
+            height: 30px;
+            filter: invert(100%);
         }
+
         video {
             margin-top: 40px;
             width: 80%;
@@ -106,14 +114,15 @@
 
     <div class="buttons">
         <button class="button">
-            <img src="pdf.png" alt="PDF">
-            Paper (coming soon)
-        </button>
-        <button class="button">
-            <img src="git.png" alt="GitHub">
+            <img src="github-logo.png" alt="GitHub">
             Code (coming soon)
         </button>
+        <button class="button">
+            <img src="pdf-logo.png" alt="PDF">
+            Paper (coming soon)
+        </button>
     </div>
+
 
     <video autoplay loop muted>
         <source src="video.mp4" type="video/mp4">
