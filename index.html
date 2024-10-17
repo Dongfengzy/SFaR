@@ -16,22 +16,24 @@
             line-height: 1.2em;
         }
         .authors {
-            margin-top: 20px;
+            margin-top: 0;
             font-size: 1.2em; /* 增大字体大小 */
             text-align: center; /* 居中对齐 */
+            margin-bottom: 0;
         }
         .authors a {
             color: blue;
             text-decoration: none;
-            margin: 0 5px;
+            margin: 0;
         }
         .institution {
             font-style: italic;
-            margin-top: 10px;
+            margin-top: 0;
             font-size: 1.1em; /* 增大机构信息的字体 */
+            color:#555555
         }
         .buttons {
-            margin-top: 40px;
+            margin-top: 10px;
         }
         .button {
             background-color: #000;
@@ -51,8 +53,8 @@
         }
 
         video {
-            margin-top: 40px;
-            width: 80%;
+            margin-top: 30px;
+            width: 40%;
         }
         .overview {
             margin-top: 40px;
@@ -97,8 +99,8 @@
 
     <div class="authors">
         <p>
-            Xicheng Lan, Wenshuo Gao, Luyao Zhang, 
-            <a href="http://39.96.165.147/people/liujiaying.html" target="_blank">Jiaying Liu</a>, 
+            Xicheng Lan, Wenshuo Gao, Luyao Zhang,
+            <a href="http://39.96.165.147/people/liujiaying.html" target="_blank">Jiaying Liu</a>,
             <a href="https://williamyang1991.github.io/" target="_blank">Shuai Yang</a>
         </p>
     </div>
@@ -109,61 +111,67 @@
 
     <div class="buttons">
         <button class="button">
-            <img src="pdf.png" alt="PDF">
+            <img src="materials/pdf.png" alt="PDF">
             Paper (coming soon)
         </button>
         <button class="button">
-            <img src="git.png" alt="GitHub">
+            <img src="materials/git.png" alt="GitHub">
             Code (coming soon)
         </button>
     </div>
 
 
     <video autoplay loop muted>
-        <source src="video.mp4" type="video/mp4">
+        <source src="materials/video.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
     <h2>Overview</h2>
     <div class="overview">
-        <p>We propose a novel text-driven framework for generating periodic and high-resolution patterns. We introduce a new training-free Splice-and-Focus Mechanism, which enhances the model by constraining latent features and modifying the attention mechanism to produce natural and strictly periodic patterns. Additionally, we present a ReLife Pipeline, which integrates super-resolution and guided image synthesis to enhance pattern resolution while eliminating artifacts and distortions. Experimental results demonstrate that our framework produces patterns of superior quality.</p>
+        <p>We propose a novel text-driven framework for generating periodic and high-resolution patterns. We introduce a new training-free Splice-and-Focus Mechanism, which enhances the model by constraining latent features and modifying the attention mechanism to produce natural and strictly periodic patterns. Additionally, we present a ReLife Pipeline, which integrates super-resolution and guided image synthesis to enhance pattern resolution while eliminating artifacts and distortions. Our framework produces patterns of superior quality.</p>
     </div>
 
     <h2>Framework</h2>
-    <img src="framework.pdf" alt="Framework Diagram" style="width: 80%;">
+    <img src="materials/framework.png" alt="Framework Diagram" style="width: 50%;">
 
     <h2>Example Results</h2>
     <div class="images">
         <div class="group">
-            <p class="prompt">"white background"</p>
-            <img src="image1_1.png" alt="Image 1">
-            <img src="image1_2.png" alt="Image 2">
-            <img src="image1_3.png" alt="Image 3">
+            <p class="prompt">"purple flowers, green leaves, white background"</p>
+            <img src="materials/image1_1.png" alt="Image 1">
+            <img src="materials/image1_2.png" alt="Image 2">
+            <img src="materials/image1_3.png" alt="Image 3">
         </div>
         <div class="group">
-            <p class="prompt">"white background"</p>
-            <img src="image2_1.png" alt="Image 4">
-            <img src="image2_2.png" alt="Image 5">
-            <img src="image2_3.png" alt="Image 6">
+            <p class="prompt">"blue flowers, light blue leaves, white background"</p>
+            <img src="materials/image2_1.png" alt="Image 4">
+            <img src="materials/image2_2.png" alt="Image 5">
+            <img src="materials/image2_3.png" alt="Image 6">
         </div>
         <div class="group">
-            <p class="prompt">"white background"</p>
-            <img src="image3_1.png" alt="Image 7">
-            <img src="image3_2.png" alt="Image 8">
-            <img src="image3_3.png" alt="Image 9">
+            <p class="prompt">"white flowers, green leaves, blue background"</p>
+            <img src="materials/image3_1.png" alt="Image 7">
+            <img src="materials/image3_2.png" alt="Image 8">
+            <img src="materials/image3_3.png" alt="Image 9">
         </div>
         <div class="group">
-            <p class="prompt">"white background"</p>
-            <img src="image4_1.png" alt="Image 10">
-            <img src="image4_2.png" alt="Image 11">
-            <img src="image4_3.png" alt="Image 12">
+            <p class="prompt">"yellow small flowers and leaves, blue background"</p>
+            <img src="materials/image4_1.png" alt="Image 10">
+            <img src="materials/image4_2.png" alt="Image 11">
+            <img src="materials/image4_3.png" alt="Image 12">
+        </div>
+        <div class="group">
+            <p class="prompt">other floral patterns</p>
+            <img src="materials/image5_1.png" alt="Image 13">
+            <img src="materials/image5_2.png" alt="Image 14">
+            <img src="materials/image5_3.png" alt="Image 15">
         </div>
     </div>
 
     <h2>References and Related Links</h2>
     <div class="references">
         <a href="https://huggingface.co/stabilityai/sdxl-turbo/tree/main" target="_blank">SDXL-turbo</a>
-        <a href="https://huggingface.co/black-forest-labs/FLUX.1-dev" target="_blank">Flux</a>
+        <a href="https://huggingface.co/black-forest-labs/FLUX.1-dev" target="_blank">FLUX</a>
     </div>
 
 </body>
