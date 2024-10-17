@@ -35,8 +35,8 @@
         .button {
             background-color: #000;
             color: #fff;
-            padding: 15px 30px;
-            font-size: 1.2em;
+            padding: 10px 20px; /* 调小按钮大小 */
+            font-size: 1em; /* 调小字体大小 */
             border: none;
             margin: 10px;
             cursor: not-allowed; /* 禁用按钮（由于链接尚未可用） */
@@ -65,6 +65,7 @@
         }
         .images {
             margin-top: 40px;
+            text-align: center; /* 图像居中 */
         }
         .images .group {
             margin-bottom: 40px;
@@ -94,8 +95,8 @@
     <div class="authors">
         <p>
             Xicheng Lan, Wenshuo Gao, Luyao Zhang, 
-            <a href="https://www.jiayingliu.com" target="_blank">Jiaying Liu</a>, 
-            <a href="https://www.shuaiyang.com" target="_blank">Shuai Yang</a>
+            <a href="http://39.96.165.147/people/liujiaying.html" target="_blank">Jiaying Liu</a>, 
+            <a href="https://williamyang1991.github.io/" target="_blank">Shuai Yang</a>
         </p>
     </div>
 
@@ -121,8 +122,7 @@
 
     <h2>Overview</h2>
     <div class="overview">
-        <p>The printing and dyeing industry requires periodic and high-resolution patterns to ensure seamless designs on large fabric sections and high-quality final products. However, current manual approaches to pattern creation are time-consuming and labor-intensive. Leveraging powerful image generative models, such as Latent Diffusion Models (LDMs), offers a promising alternative, but challenges persist in generating strictly periodic and high-resolution patterns due to the inherent randomness and high computational demands of LDMs.</p>
-        <p>In this paper, we propose a novel text-driven framework for generating periodic and high-resolution patterns. We introduce a new training-free Splice-and-Focus Mechanism, which enhances the model by constraining latent features and modifying the attention mechanism to produce natural and strictly periodic patterns. Additionally, we present a ReLife Pipeline, which integrates super-resolution and guided image synthesis to enhance pattern resolution while eliminating artifacts and distortions. Experimental results demonstrate that our framework produces patterns of superior quality.</p>
+        <p>We propose a novel text-driven framework for generating periodic and high-resolution patterns. We introduce a new training-free Splice-and-Focus Mechanism, which enhances the model by constraining latent features and modifying the attention mechanism to produce natural and strictly periodic patterns. Additionally, we present a ReLife Pipeline, which integrates super-resolution and guided image synthesis to enhance pattern resolution while eliminating artifacts and distortions. Experimental results demonstrate that our framework produces patterns of superior quality.</p>
     </div>
 
     <h2>Framework</h2>
@@ -158,8 +158,8 @@
 
     <h2>References and Related Links</h2>
     <div class="references">
-        <a href="https://flux.com" target="_blank">Flux</a>
-        <a href="https://sdxl.com" target="_blank">SDXL</a>
+        <a href="https://huggingface.co/stabilityai/sdxl-turbo/tree/main" target="_blank">SDXL-turbo</a>
+        <a href="https://huggingface.co/black-forest-labs/FLUX.1-dev" target="_blank">Flux</a>
     </div>
 
 </body>
