@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Splice, Focus and Relife: High-Resolution Periodic Pattern Generation</title>
+    <title>Splice, Focus and Relife:<br>High-Resolution Periodic Pattern Generation</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,23 +13,17 @@
         }
         h1 {
             font-size: 2.5em;
-        }
-        h2 {
-            font-size: 2em;
-            margin-top: 40px;
-        }
-        p {
-            font-size: 1.2em;
-            line-height: 1.6em;
-            text-align: justify;
+            line-height: 1.2em;
         }
         .authors {
             margin-top: 20px;
-            font-size: 1.2em;
+            font-size: 1em; /* 调小字体大小 */
+            text-align: center; /* 居中对齐 */
         }
         .authors a {
             color: blue;
             text-decoration: none;
+            margin: 0 5px;
         }
         .institution {
             font-style: italic;
@@ -45,9 +39,10 @@
             font-size: 1.2em;
             border: none;
             margin: 10px;
-            cursor: not-allowed; /* Disable button (since links are 'coming soon') */
+            cursor: not-allowed; /* 禁用按钮（由于链接尚未可用） */
             display: inline-flex;
             align-items: center;
+            border-radius: 30px; /* 两边圆角 */
         }
         .button img {
             width: 24px;
@@ -56,6 +51,17 @@
         video {
             margin-top: 40px;
             width: 80%;
+        }
+        .overview {
+            margin-top: 40px;
+            width: 33%; /* 占据中间三分之一 */
+            margin-left: auto;
+            margin-right: auto;
+            text-align: justify;
+        }
+        h2 {
+            font-size: 2em;
+            margin-top: 40px;
         }
         .images {
             margin-top: 40px;
@@ -71,14 +77,23 @@
             width: 30%;
             margin: 10px;
         }
+        .references {
+            margin-top: 40px;
+        }
+        .references a {
+            color: blue;
+            text-decoration: none;
+            margin: 0 10px;
+        }
     </style>
 </head>
 <body>
 
-    <h1>Splice, Focus and Relife: High-Resolution Periodic Pattern Generation</h1>
+    <h1>Splice, Focus and Relife:<br>High-Resolution Periodic Pattern Generation</h1>
 
     <div class="authors">
-        <p>Xicheng Lan, Wenshuo Gao, Luyao Zhang, 
+        <p>
+            Xicheng Lan, Wenshuo Gao, Luyao Zhang, 
             <a href="https://www.jiayingliu.com" target="_blank">Jiaying Liu</a>, 
             <a href="https://www.shuaiyang.com" target="_blank">Shuai Yang</a>
         </p>
@@ -105,8 +120,10 @@
     </video>
 
     <h2>Overview</h2>
-    <p>The printing and dyeing industry requires periodic and high-resolution patterns to ensure seamless designs on large fabric sections and high-quality final products. However, current manual approaches to pattern creation are time-consuming and labor-intensive. Leveraging powerful image generative models, such as Latent Diffusion Models (LDMs), offers a promising alternative, but challenges persist in generating strictly periodic and high-resolution patterns due to the inherent randomness and high computational demands of LDMs.</p>
-    <p>In this paper, we propose a novel text-driven framework for generating periodic and high-resolution patterns. We introduce a new training-free Splice-and-Focus Mechanism, which enhances the model by constraining latent features and modifying the attention mechanism to produce natural and strictly periodic patterns. Additionally, we present a ReLife Pipeline, which integrates super-resolution and guided image synthesis to enhance pattern resolution while eliminating artifacts and distortions. Experimental results demonstrate that our framework produces patterns of superior quality.</p>
+    <div class="overview">
+        <p>The printing and dyeing industry requires periodic and high-resolution patterns to ensure seamless designs on large fabric sections and high-quality final products. However, current manual approaches to pattern creation are time-consuming and labor-intensive. Leveraging powerful image generative models, such as Latent Diffusion Models (LDMs), offers a promising alternative, but challenges persist in generating strictly periodic and high-resolution patterns due to the inherent randomness and high computational demands of LDMs.</p>
+        <p>In this paper, we propose a novel text-driven framework for generating periodic and high-resolution patterns. We introduce a new training-free Splice-and-Focus Mechanism, which enhances the model by constraining latent features and modifying the attention mechanism to produce natural and strictly periodic patterns. Additionally, we present a ReLife Pipeline, which integrates super-resolution and guided image synthesis to enhance pattern resolution while eliminating artifacts and distortions. Experimental results demonstrate that our framework produces patterns of superior quality.</p>
+    </div>
 
     <h2>Framework</h2>
     <img src="framework-diagram.png" alt="Framework Diagram" style="width: 80%;">
@@ -140,8 +157,10 @@
     </div>
 
     <h2>References and Related Links</h2>
-    <p><a href="https://flux.com" target="_blank">Flux</a></p>
-    <p><a href="https://sdxl.com" target="_blank">SDXL</a></p>
+    <div class="references">
+        <a href="https://flux.com" target="_blank">Flux</a>
+        <a href="https://sdxl.com" target="_blank">SDXL</a>
+    </div>
 
 </body>
 </html>
